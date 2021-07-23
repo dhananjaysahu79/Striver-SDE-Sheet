@@ -1,3 +1,5 @@
+# sort the array having only 0,1,2 in O(n) time and O(1) space.
+
 def sortColors(nums):
     l = mid = 0; u = len(nums) - 1
     while mid <= u:
