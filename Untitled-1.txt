@@ -1,0 +1,26 @@
+pragma solidity >=0.7.0 <0.9.0;
+
+
+contract FlutCoin{
+    int balance;
+
+    constructor(){
+        balance = 0;
+    }
+
+    function getBalance() view public returns(int){
+        return balance;
+    }
+
+    function depositBalance(int amt) public{
+        balance = balance + amt;
+    }
+
+    function withdrawBalance(int amt) public{
+        balance = balance - amt;
+    }
+}
+
+color1 = '#3E376B'
+color2 = '#6B65A3'
+font = '#A9A4CC'
